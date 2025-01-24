@@ -12,6 +12,7 @@
   
   }
 
+  /*Principal*/
 
 body {
     background-color: var(--color-main);
@@ -22,13 +23,19 @@ body {
 }
 
 
-
 header {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--color-accent1);
     color: var(--color-main);
     padding: .5rem;
+}
+
+nav a{
+    color: var(--color-main);
+    text-shadow: #f5f5f5;
+    text-decoration: none;    
 }
 
 h1, h1, h3 {
@@ -52,8 +59,6 @@ h1, h1, h3 {
 }
 
 
-
-
 .slide {
     display: flex;
     justify-self: center;
@@ -62,4 +67,38 @@ h1, h1, h3 {
     overflow-x: auto;
     max-width: 97%;
     border-radius: 10px;
+}
+
+/*Slide de talleres*/
+
+.slidetalleres {
+    display: flex;
+    justify-self: center;
+    height: 500px;
+    width: auto;
+    overflow-x: auto;
+    max-width: 97%;
+}
+
+.slidetalleres img {
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    margin: 1rem;
+}
+
+#galeria {
+    text-align: center;   
+}
+
+#talleres ::-webkit-scrollbar {
+    height: 10px;
+}
+
+#talleres ::-webkit-scrollbar-track {
+    background-color:var(--color-accent2);
+}
+
+#talleres ::-webkit-scrollbar-thumb{
+    background-color: var(--color-accent1);
 }
